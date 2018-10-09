@@ -1,0 +1,384 @@
+/*
+  Name website: SEIA
+   Designer name: Doaa Alkabariti
+*/
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: light;
+  src: url("../fonts/JF Flat light.ttf") format("opentype");
+  src: url("../fonts/JF Flat light.eot") format("opentype");
+  src: url("../fonts/JF Flat light.woff") format("opentype");
+}
+
+@font-face {
+  font-family: regular;
+  src: url("../fonts/JF-Flat-regular.ttf") format("opentype");
+  src: url("../fonts/JF-Flat-regular.eot") format("opentype");
+  src: url("../fonts/JF-Flat-regular.woff") format("opentype");
+}
+
+@font-face {
+  font-family: bold;
+  src: url("../fonts/JF Flat medium.ttf") format("opentype");
+  src: url("../fonts/JF Flat medium.eot") format("opentype");
+  src: url("../fonts/JF Flat medium.woff") format("opentype");
+}
+
+.container {
+  width:80%;
+  margin: auto;
+}
+
+/***************************************** properities of hero section********************************************/
+.header{
+  background: url('../images/1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.header nav {
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.header .nav .logo {
+  float: left;
+}
+
+.header .nav .logo a {
+  text-transform: uppercase;
+  text-decoration: none ;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.header .nav .logo a span,
+.span {
+  display: inline-block;
+  margin-right: 4px;
+  color: #03a9f4;
+  font-family: bold;
+}
+
+.header .nav .menu {
+  float: right;
+}
+
+.header .nav .menu ul {
+  list-style-type: none;
+}
+
+.header .nav .menu ul li {
+  display: inline;
+  margin: 10px;
+}
+
+.header .nav .menu ul li.active a {
+  color: #03a9f4;
+}
+
+.header .nav .menu ul li a {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none ;
+}
+
+.header .nav .menu ul li a:hover{
+  color:#03a9f4 ;
+}
+
+.header .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header .content h1 {
+  color: #FFF;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.header .content p {
+  color: #999999;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.header .content a {
+  background: transparent;
+  border: 1px solid #03a9f4;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  color: #03a9f4;
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;;
+}
+
+.header .content a:hover {
+  background: #03a9f4;
+  border: 1px solid #03a9f4;
+  color: #FFFFFF;
+}
+
+/***************************************** properities of welcom section********************************************/
+.welcomeSec{
+  padding: 65px 15px;
+  box-sizing: border-box;
+}
+
+.weight {
+  background-color: #FFF;
+}
+
+.titleSec {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.titleSec h1 {
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.titleSec h1 span {
+  text-decoration: underline;
+}
+
+.titleSec p {
+  color: #888;
+  font-size: 16px;
+}
+
+/***************************************** properities of features section********************************************/
+.features {
+  padding: 60px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.otherColor {
+  background-color: #EEE;
+}
+
+.features .f-boxes {
+  display: flex;
+
+}
+
+@media (max-width: 767px) {
+  .features .f-boxes {
+    flex-direction: column;
+  }
+}
+
+.features .f-boxes .feat {
+  flex: 1;
+  width: 100%;
+  margin: 0 12px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 2px solid #FFF;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.features .f-boxes .feat:hover {
+  border: 2px solid #03a9f4;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .features .f-boxes {
+    display: block ;
+  }
+
+  .features .f-boxes .feat  {
+    width: 90% ;
+    margin: 0 auto 20px auto;
+  }
+}
+
+.features .f-boxes .feat i {
+  color: #03a9f4;
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.features .f-boxes .feat h3 {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.features .f-boxes .feat p {
+  color: #888;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/***************************************** properities of team section********************************************/
+.our-team {
+  padding: 60px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.our-team .team-box {
+  display: flex;
+}
+
+.our-team .team-box .team {
+  flex: 1;
+  width: 100%;
+  margin: 1 12px;
+}
+
+.our-team .team-box .team img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.our-team .team-box .team img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 4px 20px 0px rgba(0,0,0,.5)
+}
+
+.our-team .team-box .team h3 {
+  color: #444;
+}
+
+.our-team .team-box .team a {
+  color: #03a9f4
+}
+
+.our-team .team-box .team a:hover {
+  color: black;
+}
+
+/***************************************** properities of form section********************************************/
+.formtSec{
+  background: #d7d7d7;
+  padding-bottom: 50px;
+}
+
+.formtSec h2,
+.formtSec p
+{
+  text-align: center;
+}
+
+.formtSec h2{
+padding: 20px;
+}
+
+.firstInput{
+  width:50%;
+  float: left;
+  height: auto;
+  }
+
+.secodInput{
+  width:50%;
+  float: left;
+  height: auto;
+}
+
+.formtSec .row{
+  padding-bottom: 70px;
+}
+
+.finput,
+.sinput
+{
+  border-radius: 5px;
+  padding: 17px;
+  width:350px;
+  margin-left: 170px;
+  box-sizing: border-box;
+  outline: 0px;
+  border: 0px;
+  background: #03a9f4;
+}
+
+.sinput{
+  margin-left:20px;
+}
+
+.thirdInput{
+  text-align: center;
+}
+
+.tInput{
+  width:740px;
+  height: 190px;
+  border-radius: 5px;
+  padding: 17px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  outline: 0px;
+  border: 0px;
+  background: #03a9f4;
+  font-size: 16px;
+}
+
+.submitBtn{
+  width:280px;
+  height: 50px;
+  border-radius:6px;
+  background: #3d6a88;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 380px;
+}
+/***************************************** properities of footer section********************************************/
+.FooterSec{
+    background: #2b2b2b;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-bottom: -100px;
+}
+
+.footerPar{
+   text-align: center;
+   margin-top: 10px;
+  }
+
+  .descPar{
+  color: #979797;
+  font-size: 12px;
+}
